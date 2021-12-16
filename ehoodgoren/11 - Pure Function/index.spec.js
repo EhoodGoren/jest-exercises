@@ -1,11 +1,16 @@
 // setPrice(item: Object, price: Number) => item: Object
 const setPrice = (item, price) => {
   // TODO: implement
+  return {
+    name: item.name,
+    price
+  }
 };
 
 // addToCart(cart: Array, item: Object) => cart: Array
 const addToCart = (cart, item) => {
   // TODO: implement
+  return [...cart, item];
 };
 
 describe('setPrice()', () => {
